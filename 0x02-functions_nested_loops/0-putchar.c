@@ -1,9 +1,11 @@
 #include "main.h"
-
 /**
- * print_putchar - Prints _putchar followed by a new line
-*/
-void print_putchar(void)
+ * main - Entry point 
+ *
+ * Return : Always o (Success)
+ *
+ */
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
@@ -14,4 +16,5 @@ void print_putchar(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
+	return (0);
 }
