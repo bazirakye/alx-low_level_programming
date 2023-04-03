@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * _strstr - lacate substrings within a string
  * @haystack: the string to search
@@ -8,24 +8,17 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	char *ptr1, *ptr2, *ptr3;
-
-	if (*needle == '\0')
-		return (haystack);
-
-	while (*haystack != '\0')
+	int i, j;
+	
+	for (i = 0; haystack[i] != '\0'; i++)
 	{
-		ptr1 = haystack;
-		ptr2 = needle;
-
-		while (*ptr1 != '\0' && *ptr2 != '\0' && *ptr1 == *ptr2)
+		for (i = 0; haystack[i] != '\0'; j++)
 		{
-			++ptr1;
-			++ptr2;
+			if (haystack[i + j] != needle[j])
+				break;
 		}
-		if (*ptr == '\0')
-			return (haystack);
-		++haystack;
+		if (!needle[j])
+			return (&haystack[i]);
 	}
 	return (NULL);
 }
