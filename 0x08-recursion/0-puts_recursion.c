@@ -3,6 +3,7 @@
 
 /**
  * _puts_recursion - recursive function to print the string
+ * put_char - whrite character
  * @s: pointer to the character
  * return: returns at base case
  */
@@ -15,6 +16,6 @@ void _puts_recursion(char *s)
 {
 	if  (*s == '\0')
 		return;
-	putchar(*s);
+	put_char(*s);
 	_puts_recursion(*s + 1);
 }
