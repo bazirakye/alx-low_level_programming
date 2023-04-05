@@ -20,9 +20,3 @@ void _puts_recursion(char *s)
 	put_char(*s);
 	_puts_recursion(s + 1);
 }
-int main void()
-{
-	_puts_recursion();
-	put_char('\n');
-	return (0);
-}
