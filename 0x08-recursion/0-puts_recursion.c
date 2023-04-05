@@ -1,10 +1,15 @@
 #include "main.h"
+#include <unistd.h>
 
 /**
  * _puts_recursion - recursive function to print the string
  * @s: pointer to the character
  * return: returns at base case
  */
+void put_char(char c)
+{
+	write(1, &c, 1);
+}
 
 void _puts_recursion(char *s)
 {
@@ -12,4 +17,11 @@ void _puts_recursion(char *s)
 		return;
 	putchar(*s);
 	_puts_recursion(*s + 1);
+}
+
+int main(void)
+{
+	_puts_recursion();
+	put_char();
+	return (0);
 }
