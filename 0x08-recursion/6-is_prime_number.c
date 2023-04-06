@@ -34,5 +34,5 @@ int check(int n, int res)
 		return (0);
 	}
 	else
-		return (check(n, res + 1))
+		return (check(n, res + 1));
 }
