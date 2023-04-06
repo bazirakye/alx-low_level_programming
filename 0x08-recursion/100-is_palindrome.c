@@ -19,7 +19,7 @@ int last_index(char *s)
 
 /**
  * is_palindrome - check if string is palindrome
- * check - check
+ * checks - check
  * @s: string to check
  *
  * Return: returns 0 if not and 1 if palindrome
@@ -29,18 +29,18 @@ int is_palindrome(char *s)
 {
 	int end = last_index(s)
 		;
-	return (check(s, 0, end - 1, end % 2));
+	return (checks(s, 0, end - 1, end % 2));
 }
 
 /**
- * check - check function
+ * checks - check function
  * @s: string to check
  * @start: start
  * @end: end
  * @pair: pair
  * Return: return 1 for palindrome and 0 if not
  */
-int check(char *s, int start, int end, int pair)
+int checks(char *s, int start, int end, int pair)
 {
 	if ((start == end && pair != 0) || (start == end + 1 && pair == 0))
 	{
@@ -53,6 +53,6 @@ int check(char *s, int start, int end, int pair)
 
 	else
 	{
-		return (check(s, start + 1, end - 1, pair));
+		return (checks(s, start + 1, end - 1, pair));
 	}
 }

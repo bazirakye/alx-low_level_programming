@@ -11,5 +11,5 @@ int is_prime_number(int n);
 int check(int n, int res);
 int is_palindrome(char *s);
 int last_index(char *s);
-int check(char *s, int start, int end, int pair);
+int checks(char *s, int start, int end, int pair);
 #endif
