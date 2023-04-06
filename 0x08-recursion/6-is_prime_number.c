@@ -11,7 +11,7 @@
 
 int is_prime_number(int n)
 {
-	return (check(int n, int 2));
+	return (check(n, 2));
 }
 
 /**
