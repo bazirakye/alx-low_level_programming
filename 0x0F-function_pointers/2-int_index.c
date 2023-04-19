@@ -3,10 +3,10 @@
 
 /**
  * int_index - function that serches integers
- *
  * @array: array of integers
  * @size: number of elements in array
  * @cmp: functional pointer to compare if int exisits
+ * Return: first integerger corresponding or -1 if size is 0
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
