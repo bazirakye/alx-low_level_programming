@@ -7,14 +7,14 @@
  * @argv: argument vector
  * Return:0
  */
-int main(int argc char **argv)
+int main(int argc, char **argv)
 {
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	if (*argv[2] == "/" || *argv[2] == "%")&& atoi(argv[3] == 0)
+	if ((*argv[2] == '/' || *argv[2] == '%') && atoi(argv[3]) == 0)
 		{
 			printf("Error\n");
 			exit(100);
