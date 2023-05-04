@@ -4,16 +4,20 @@
  * flip_bits - flip bits
  * @n: number one
  * @m: number 2
+ * Return: count
  */
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned int bits;
+	unsigned int count = 0;
 
-	for (bits = 0; n || m; n >>= 1, n >>= 1)
+	unsigned long int diff = n ^ m;
+
+	while (diff)
 	{
-		if ((n & 1) != (m & 1))
-			bits++;
+		count += (diff & 1);
+		diff >>= 1;
 	}
-	return (bits);
+
+	return (count);
 }
