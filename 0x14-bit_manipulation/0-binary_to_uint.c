@@ -11,7 +11,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int decval = 1, total = 0;
 
 	int i;
-	
+
 	int stlen = strlen(b);
 
 	if (b == NULL)
