@@ -6,9 +6,9 @@
  * @index: index of the bit to convert
  * Return: 1 for succes or -1 for failed
  */
-set_bit(unsigned long int *n, unsigned int index)
+int set_bit(unsigned long int *n, unsigned int index)
 {
-	insigned int i;
+	unsigned long int i;
 
 	if (index > 63)
 		return (-1);
