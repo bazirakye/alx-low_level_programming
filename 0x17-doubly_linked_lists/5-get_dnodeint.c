@@ -1,6 +1,4 @@
 #include "lists.h"
-#include <stdlib.h>
-
 /**
  * get_dnodeint_at_index - returns nth node of a list
  * @head: head node
@@ -23,5 +21,5 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 		head = head->next;
 		i++;
 	}
-	return (head)
+	return (head);
 }
